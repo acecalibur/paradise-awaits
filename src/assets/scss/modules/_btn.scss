@@ -1,0 +1,29 @@
+.btn {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+
+  &--main {
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+  }
+
+  &--blue {
+    background-color: $color-primary;
+  }
+
+  &--orange {
+    background-color: $color-secondary;
+    transition: all 0.4s ease;
+
+    &:hover {
+      box-shadow: $box-shadow;
+      background-color: #cf892e;
+    }
+  }
+
+  &--round {
+    border-radius: 25px;
+  }
+}
