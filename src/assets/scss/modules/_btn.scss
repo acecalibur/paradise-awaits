@@ -4,10 +4,22 @@
   text-decoration: none;
 
   &--main {
-    padding: 1rem 2rem;
-    font-size: 1.8rem;
+    padding: 7px 14px;
     text-transform: capitalize;
-    animation: moveInBottom 1s ease 0.75s backwards;
+    // animation: moveInBottom 1s ease 0.75s backwards;
+
+    @include atXS {
+      padding: 8px 16px;
+    }
+
+    @include atMD {
+      padding: 9px 18px;
+      font-size: 1.8rem;
+    }
+
+    @include atXL {
+      padding: 1rem 2rem;
+    }
   }
 
   &--blue {

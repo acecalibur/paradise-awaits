@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./assets/images/icons/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200;300;400;500;600&display=swap"
@@ -15,13 +14,21 @@
   </head>
   <body>
     <section class="hero">
-      <img src="./assets/images/hero-xl.jpg" alt="Beautiful ocean sunset view." />
+      <picture>
+        <source srcset="assets/images/hero-xl.jpg" media="(min-width: 1600px)" />
+        <source srcset="assets/images/hero-lg.jpg" media="(min-width: 1280px)" />
+        <source srcset="assets/images/hero-md.jpg" media="(min-width: 992px)" />
+        <source srcset="assets/images/hero-sm.jpg" media="(min-width: 576px)" />
+        <img src="assets/images/hero.jpg" alt="Beautiful ocean sunset view." />
+      </picture>
       <div class="hero__text-content">
-        <h1><span class="hero__title">Your Clarity</span> <span class="hero__subtitle">One Trip Away</span></h1>
+        <h1>
+          <span class="hero__title">Your Clarity</span>
+          <span class="hero__subtitle">One Trip Away</span>
+        </h1>
         <p class="hero__description">Creating soul restoring experiences that inspire you to be you!</p>
         <a href="#" class="btn btn--main btn--orange btn--round">Get started today</a>
       </div>
     </section>
-    <script src="./index.js"></script>
   </body>
 </html>
