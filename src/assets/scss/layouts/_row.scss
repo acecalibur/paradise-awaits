@@ -1,0 +1,19 @@
+.row {
+  display: block;
+
+  @include atMD {
+    display: flex;
+
+    &__pull-left {
+      flex: 0 0 40%;
+    }
+
+    &__push-right {
+      flex: 1 1 auto;
+    }
+  }
+
+  &--spacing-top {
+    margin-top: 6rem;
+  }
+}

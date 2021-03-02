@@ -1,0 +1,15 @@
+.page-section {
+  padding: 3rem 0;
+
+  @include atSM {
+    padding: 4.5rem 0;
+  }
+
+  @include atMD {
+    padding: 6rem 0;
+  }
+
+  @include atLG {
+    padding: 7.5rem 0;
+  }
+}

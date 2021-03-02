@@ -1,0 +1,43 @@
+.headline {
+  &__primary {
+    margin-bottom: 2rem;
+    color: $color-primary;
+    font-size: 4rem;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  &__secondary {
+    max-width: 55rem;
+    margin: 1rem auto 2.5rem auto;
+    color: $color-secondary;
+    font-size: 3.2rem;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.25;
+  }
+
+  &__tertiary {
+    margin-top: -5px;
+    margin-bottom: 20px;
+    color: $color-primary;
+    font-size: 4rem;
+    font-weight: 300;
+  }
+}
+
+.generic-text {
+  text-align: justify;
+
+  p {
+    line-height: 1.65;
+  }
+
+  p:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  @include atMD {
+    font-size: 1.8rem;
+  }
+}

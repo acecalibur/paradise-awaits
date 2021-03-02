@@ -1,5 +1,11 @@
 @import './abstract/variables';
 @import './abstract/animations';
+@import './abstract/mixins';
+@import './layouts/container';
+@import './layouts/page-section';
+@import './layouts/row';
 @import './base/global';
-@import './sections/hero';
+@import './base/typography';
 @import './modules/btn';
+@import './sections/hero';
+@import './sections/our-beginning';
