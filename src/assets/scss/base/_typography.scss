@@ -1,28 +1,67 @@
 .headline {
   &__primary {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     color: $color-primary;
-    font-size: 4rem;
+    font-size: 2.8rem;
     font-weight: 300;
     text-align: center;
+
+    @include atSM {
+      font-size: 3.2rem;
+    }
+
+    @include atMD {
+      margin-bottom: 2rem;
+      font-size: 3.6rem;
+    }
+
+    @include atLG {
+      font-size: 4rem;
+    }
   }
 
   &__secondary {
-    max-width: 55rem;
+    max-width: 60rem;
     margin: 1rem auto 2.5rem auto;
     color: $color-secondary;
-    font-size: 3.2rem;
+    font-size: 2.2rem;
     font-weight: 300;
     text-align: center;
     line-height: 1.25;
+
+    @include atSM {
+      font-size: 2.6rem;
+    }
+
+    @include atMD {
+      font-size: 3.2rem;
+    }
+
+    @include atLG {
+      font-size: 3.6rem;
+    }
   }
 
   &__tertiary {
-    margin-top: -5px;
-    margin-bottom: 20px;
+    margin: 15px auto;
     color: $color-primary;
-    font-size: 4rem;
+    font-size: 2.8rem;
     font-weight: 300;
+    text-align: center;
+
+    @include atSM {
+      font-size: 3.2rem;
+    }
+
+    @include atMD {
+      margin: -1.5rem auto 2rem auto;
+      font-size: 3.6rem;
+      text-align: left;
+    }
+
+    @include atLG {
+      font-size: 4rem;
+    }
   }
 }
 
