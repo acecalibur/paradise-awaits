@@ -65,6 +65,28 @@
   }
 }
 
+.section-title {
+  margin-bottom: 6rem;
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-align: center;
+
+  @include atSM {
+    font-size: 3.5rem;
+  }
+  @include atMD {
+    font-size: 4.5rem;
+  }
+  @include atLG {
+    font-size: 5.5rem;
+  }
+
+  &__icon {
+    margin-top: -20px;
+    margin-right: 5px;
+  }
+}
+
 .generic-text {
   text-align: justify;
 

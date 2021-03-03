@@ -1,4 +1,4 @@
-.row {
+.flex {
   display: block;
 
   @include atMD {
@@ -24,6 +24,24 @@
     }
     @include atXL {
       margin-top: 6rem;
+    }
+  }
+}
+
+.grid {
+  display: block;
+
+  & > div:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+
+  @include atSM {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    gap: 8rem;
+
+    & > div:not(:last-child) {
+      margin-bottom: 0;
     }
   }
 }
