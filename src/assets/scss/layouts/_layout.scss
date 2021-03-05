@@ -3,6 +3,11 @@
 
   @include atMD {
     display: flex;
+    justify-content: space-between;
+
+    .col__4 {
+      flex: 0 0 30%;
+    }
 
     &__pull-left {
       flex: 0 0 40%;
@@ -25,6 +30,10 @@
     @include atXL {
       margin-top: 6rem;
     }
+  }
+
+  &--padding-top {
+    padding-top: 8rem;
   }
 }
 

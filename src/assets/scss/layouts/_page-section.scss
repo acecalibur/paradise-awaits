@@ -20,4 +20,12 @@
   &--bg-blue {
     background-color: $color-primary;
   }
+
+  &--testimonials-bg {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+      url('../images/testimonials-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
 }
