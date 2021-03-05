@@ -1,14 +1,23 @@
 .testimonials {
   &__item {
+    margin-top: 12rem;
     height: 100%;
-    background-color: white;
     padding: 0 2rem 2rem 2rem;
+    background-color: white;
     border-radius: 4px;
 
+    @include atMD {
+      margin-top: 0;
+      border-radius: 4px;
+    }
+
     p {
-      font-size: 1.8rem;
       line-height: 1.65;
       text-align: justify;
+
+      @include atMD {
+        font-size: 1.8rem;
+      }
     }
   }
 

@@ -16,6 +16,10 @@
     &__push-right {
       flex: 1 1 auto;
     }
+
+    &--padding-top {
+      padding-top: 8rem;
+    }
   }
 
   &--spacing-top {
@@ -30,10 +34,6 @@
     @include atXL {
       margin-top: 6rem;
     }
-  }
-
-  &--padding-top {
-    padding-top: 8rem;
   }
 }
 

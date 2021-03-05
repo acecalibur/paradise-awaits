@@ -7,6 +7,14 @@
     max-width: 90rem;
   }
 
+  &--no-padding-x {
+    padding: 0;
+
+    @include atMD {
+      padding: 0 1.8rem;
+    }
+  }
+
   .container {
     padding: 0;
   }
