@@ -1,0 +1,16 @@
+.navbar {
+  &__list {
+    display: flex;
+    font-size: 1.4rem;
+    font-weight: 300;
+    list-style-type: none;
+  }
+
+  &__list-item {
+    margin-right: 2rem;
+
+    a {
+      color: white;
+    }
+  }
+}

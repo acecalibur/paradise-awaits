@@ -4,8 +4,7 @@
   text-decoration: none;
 
   &--main {
-    padding: 7px 14px;
-    text-transform: capitalize;
+    padding: 8px 16px;
     // animation: moveInBottom 1s ease 0.75s backwards;
 
     @include atXS {
@@ -36,7 +35,17 @@
     }
   }
 
+  &--capitalize {
+    text-transform: capitalize;
+  }
+
   &--round {
     border-radius: 25px;
+  }
+
+  &--nav {
+    font-size: 1.4rem;
+    padding: 7px 14px;
+    border-radius: 2px;
   }
 }
