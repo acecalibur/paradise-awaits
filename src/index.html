@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200;300;400;500;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sanitize.css/2.0.0/sanitize.min.css" />
     <title>Paradise Awaits</title>
     <meta name="keywords" content="Travel planning, travel bundles, travel escapes" />
@@ -21,6 +22,10 @@
     <header class="site-header">
       <div class="container container--nav">
         <nav class="navbar">
+          <div class="navbar__menu">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+          </div>
           <ul class="navbar__list">
             <li class="navbar__list-item"><a href="#our-beginning">Beginnings</a></li>
             <li class="navbar__list-item"><a href="#our-features">Features</a></li>
@@ -101,7 +106,7 @@
             <img src="assets/images/icons/star.svg" class="section-title__icon" />Our <strong>Features</strong>
           </h2>
           <div class="grid">
-            <div class="features__item">
+            <div class="features__item features__item--fade-left">
               <img src="assets/images/icons/rain.svg" class="features__icon" />
               <h3 class="features__title">Weather Tracker</h3>
               <p>
@@ -109,7 +114,7 @@
                 around your location. A good rain can be refreshing, but sometimes you just want to stay dry.
               </p>
             </div>
-            <div class="features__item">
+            <div class="features__item features__item--fade-right">
               <img src="assets/images/icons/globe.svg" class="features__icon" />
               <h3 class="features__title">Global Guides</h3>
               <p>
@@ -118,7 +123,7 @@
                 locations.
               </p>
             </div>
-            <div class="features__item">
+            <div class="features__item features__item--fade-left">
               <img src="assets/images/icons/wifi.svg" class="features__icon" />
               <h3 class="features__title">Wi-Fi Waypoints</h3>
               <p>
@@ -126,7 +131,7 @@
                 we&rsquo;ve mapped out where local wi-fi spots are and marked them in our app&rsquo;s map view.
               </p>
             </div>
-            <div class="features__item">
+            <div class="features__item features__item--fade-right">
               <img src="assets/images/icons/fire.svg" class="features__icon" />
               <h3 class="features__title">Survival Kit</h3>
               <p>
