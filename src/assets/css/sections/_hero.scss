@@ -1,7 +1,7 @@
 .hero {
   position: relative;
   backface-visibility: hidden;
-  overflow-x: hidden;
+  overflow: hidden;
   border-bottom: 12px solid $color-primary;
 
   &__text-content {
