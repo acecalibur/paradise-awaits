@@ -2,6 +2,15 @@
   position: absolute;
   z-index: 1;
   width: 100%;
-  height: 6rem;
-  background-color: rgba($color-primary, 0.8);
+  height: 6.5rem;
+  background-color: rgba($color-primary, 0.4);
+  transition: background-color 0.2s ease;
+
+  @include atMD {
+    position: fixed;
+
+    &--dark {
+      background-color: #173348;
+    }
+  }
 }
