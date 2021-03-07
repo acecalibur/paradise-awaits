@@ -22,15 +22,15 @@
     <header class="site-header">
       <div class="container container--nav">
         <nav class="navbar">
-          <div class="navbar__menu">
+          <!-- <div class="navbar__menu">
             <i class="fas fa-bars"></i>
             <i class="fas fa-times"></i>
-          </div>
+          </div> -->
           <ul class="navbar__list">
-            <li class="navbar__list-item"><a href="#our-beginning">Beginnings</a></li>
-            <li class="navbar__list-item"><a href="#our-features">Features</a></li>
-            <li class="navbar__list-item"><a href="#our-testimonials">Testimonials</a></li>
-            <li class="navbar__list-item"><a href="#our-gallery">Gallery</a></li>
+            <li class="navbar__list-item"><a href="#our-beginning" id="our-beginning-link">Beginnings</a></li>
+            <li class="navbar__list-item"><a href="#our-features" id="our-features-link">Features</a></li>
+            <li class="navbar__list-item"><a href="#our-testimonials" id="our-testimonials-link">Testimonials</a></li>
+            <li class="navbar__list-item"><a href="#our-gallery" id="our-gallery-link">Gallery</a></li>
           </ul>
         </nav>
         <a href="#" class="btn btn--nav btn--orange">Get in Touch</a>
@@ -53,7 +53,7 @@
         <a href="#" class="btn btn--main btn--orange btn--round btn--capitalize">Get started today</a>
       </div>
     </section>
-    <section id="our-beginning" class="page-section">
+    <section id="our-beginning" data-matching-link="#our-beginning-link" class="page-section">
       <div class="container">
         <div class="beginnings">
           <h2 class="headline__primary">The first trip we planned <strong>was our own.</strong></h2>
@@ -99,7 +99,7 @@
         </div>
       </div>
     </section>
-    <section id="our-features" class="page-section page-section--bg-blue">
+    <section id="our-features" data-matching-link="#our-features-link" class="page-section page-section--bg-blue">
       <div class="container">
         <div class="features">
           <h2 class="section-title">
@@ -143,7 +143,11 @@
         </div>
       </div>
     </section>
-    <section id="our-testimonials" class="page-section page-section--testimonials-bg">
+    <section
+      id="our-testimonials"
+      data-matching-link="#our-testimonials-link"
+      class="page-section page-section--testimonials-bg"
+    >
       <div class="container container--no-padding-x">
         <div class="testimonials">
           <h2 class="section-title section-title--blue">
@@ -199,7 +203,7 @@
         </div>
       </div>
     </section>
-    <section id="our-gallery">
+    <section id="our-gallery" data-matching-link="#our-gallery-link" class="page-section page-section--no-spacing">
       <div class="gallery">
         <figure class="gallery__item gallery__item--1">
           <img src="assets/images/gal-1.jpg" alt="" />

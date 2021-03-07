@@ -11,6 +11,10 @@
 
     a {
       color: white;
+
+      &.is-current-link {
+        color: #eeae5a;
+      }
     }
   }
 }

@@ -31,4 +31,9 @@
       background-position: center;
     }
   }
+
+  &--no-spacing {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
