@@ -44,8 +44,15 @@
   }
 
   &--nav {
-    font-size: 1.4rem;
-    padding: 7px 14px;
+    font-size: 1.8rem;
+    margin-top: -2rem;
+    padding: 10px 20px;
     border-radius: 2px;
+
+    @include atMD {
+      font-size: 1.4rem;
+      margin-top: 0;
+      padding: 7px 14px;
+    }
   }
 }

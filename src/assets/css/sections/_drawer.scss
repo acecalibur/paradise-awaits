@@ -1,0 +1,13 @@
+.drawer {
+  .navbar__menu-icon .fa-times {
+    display: block;
+  }
+
+  .navbar__menu-icon .fa-bars {
+    display: none;
+  }
+
+  .navbar__menu-content {
+    transform: translateX(0);
+  }
+}
