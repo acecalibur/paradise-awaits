@@ -29,9 +29,9 @@ class StickyHeader {
     this.calcScrollDirection();
 
     if (window.scrollY > 180) {
-      this.siteHeader.classList.add('site-header--dark');
+      this.siteHeader.classList.add('site-header--darker');
     } else {
-      this.siteHeader.classList.remove('site-header--dark');
+      this.siteHeader.classList.remove('site-header--darker');
     }
 
     this.pageSections.forEach((el) => {

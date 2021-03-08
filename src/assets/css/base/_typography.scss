@@ -89,11 +89,13 @@
   }
 
   &__icon {
-    margin-top: -10px;
-    margin-right: 5px;
+    display: block;
+    margin: 0 auto 10px auto;
 
     @include atMD {
-      margin-top: -20px;
+      display: inline-block;
+      margin-right: 8px;
+      margin-bottom: 0;
     }
   }
 }
