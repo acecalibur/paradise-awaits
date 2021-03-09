@@ -9,6 +9,7 @@
     "build": "NODE_ENV=production webpack"
   },
   "dependencies": {
+    "lazysizes": "^5.3.0",
     "lodash": "^4.17.21",
     "scrollreveal": "^4.0.9"
   },
