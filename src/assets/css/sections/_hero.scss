@@ -4,37 +4,36 @@
   overflow: hidden;
   border-bottom: 12px solid $color-primary;
 
+  img {
+    filter: brightness(0.85);
+  }
+
   &__text-content {
     position: absolute;
     left: 0;
-    top: 45%;
+    top: 60%;
     transform: translateY(-50%);
     width: 100%;
     color: white;
     text-align: center;
 
-    @include atSM {
-      top: 50%;
-    }
-
     @include atMD {
-      top: 55%;
-    }
-
-    @include atLG {
-      top: 60%;
+      top: 50%;
     }
   }
 
   h1 {
-    margin: 0;
+    margin: 0 auto 1rem 0;
     font-weight: 200;
     text-transform: capitalize;
+
+    @include atMD {
+      margin-bottom: 1rem;
+    }
   }
 
   &__title {
     display: block;
-    margin-bottom: -1.5rem;
     font-size: 3.8rem;
     // animation: moveInLeft 1s ease;
 
@@ -45,6 +44,7 @@
       font-size: 5rem;
     }
     @include atMD {
+      margin-bottom: -1rem;
       font-size: 5.6rem;
     }
     @include atLG {
@@ -78,7 +78,7 @@
   }
 
   &__description {
-    max-width: 45rem;
+    max-width: 38rem;
     margin: 0 auto 1rem auto;
     font-size: 1.8rem;
     font-weight: 300;
@@ -90,6 +90,7 @@
     }
 
     @include atMD {
+      max-width: 45rem;
       margin-bottom: 1.5rem;
       font-size: 2.2rem;
     }
