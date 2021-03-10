@@ -210,7 +210,7 @@
     </section>
     <section id="our-gallery" data-matching-link="#our-gallery-link" class="page-section page-section--no-spacing">
       <div class="gallery">
-        <figure class="gallery__item gallery__item--1">
+        <figure class="gallery__item gallery__item--1 gallery__item--is-visible">
           <img data-src="assets/images/gal-1.jpg" alt="" class="lazyload" />
         </figure>
         <figure class="gallery__item gallery__item--2">
@@ -252,9 +252,15 @@
         <figure class="gallery__item gallery__item--14">
           <img data-src="assets/images/gal-14.jpg" alt="" class="lazyload" />
         </figure>
+        <div class="gallery__btn-actions">
+          <button class="gallery__btn gallery__btn--prev">
+            <i class="fas fa-arrow-alt-circle-left"></i>
+          </button>
+          <button class="gallery__btn gallery__btn--next">
+            <i class="fas fa-arrow-alt-circle-right"></i>
+          </button>
+        </div>
       </div>
-      <button class="gallery__prev-btn">Prev</button>
-      <button class="gallery__next-btn">Next</button>
     </section>
     <footer class="site-footer">
       <div class="container">
