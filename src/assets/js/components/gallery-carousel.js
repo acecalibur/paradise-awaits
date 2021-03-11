@@ -15,7 +15,6 @@ export default class GalleryCarousel {
 
   handleUpdateSlideStyles() {
     this.slides.forEach((el) => {
-      console.log(el);
       el.classList.remove('gallery__item--is-visible');
       el.classList.add('gallery__item--is-hidden');
     });

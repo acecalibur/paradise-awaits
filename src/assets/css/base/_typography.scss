@@ -71,10 +71,6 @@
   font-weight: 300;
   text-align: center;
 
-  &--blue {
-    color: $color-primary;
-  }
-
   @include atSM {
     margin-bottom: 3.6rem;
     font-size: 4.4rem;
@@ -86,6 +82,14 @@
   @include atLG {
     margin-bottom: 6rem;
     font-size: 5.6rem;
+  }
+
+  &--blue {
+    color: $color-primary;
+  }
+
+  &--mb-small {
+    margin-bottom: 2rem;
   }
 
   &__icon {
