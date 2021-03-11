@@ -1,0 +1,58 @@
+.lightbox {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.95);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.25);
+  transition: all 0.2s ease-in-out;
+
+  &--is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+
+  &__inner {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  &__description {
+    line-height: 1.75;
+    text-align: center;
+
+    @include atSM {
+      font-size: 1.8rem;
+    }
+
+    @include atLG {
+      font-size: 2rem;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 1.25rem;
+    right: 2.5rem;
+    color: $color-primary;
+    font-size: 2.8rem;
+    transform: scaleX(1.25);
+    transform-origin: 100% 0;
+    transition: color 0.2s ease;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-secondary;
+    }
+  }
+}
