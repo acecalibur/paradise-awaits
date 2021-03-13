@@ -27,7 +27,7 @@
 
   &--orange {
     background-color: $color-secondary;
-    transition: all 0.4s ease;
+    transition: all 0.5s ease;
 
     &:hover {
       box-shadow: $box-shadow;
@@ -44,15 +44,15 @@
   }
 
   &--nav {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     margin-top: -2rem;
     padding: 10px 20px;
     border-radius: 2px;
 
     @include atMD {
-      font-size: 1.4rem;
+      font-size: 1.6rem;
       margin-top: 0;
-      padding: 7px 14px;
+      padding: 8px 16px;
     }
   }
 

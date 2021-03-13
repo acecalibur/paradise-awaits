@@ -1,8 +1,8 @@
-export default class MobileMenu {
+class MobileMenu {
   constructor() {
     this.menuIcon = document.querySelector('.navbar__menu-icon');
+    this.menuList = document.querySelector('.navbar__list');
     this.links = document.querySelectorAll('.navbar__list a');
-    this.body = document.querySelector('body');
     this.events();
   }
 
@@ -14,6 +14,9 @@ export default class MobileMenu {
   }
 
   toggleMenu() {
-    this.body.classList.toggle('drawer');
+    this.menuList.classList.toggle('navbar__list--is-active');
+    this.menuIcon.classList.toggle('navbar__menu-icon--is-active');
   }
 }
+
+export default MobileMenu;

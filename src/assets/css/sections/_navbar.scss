@@ -1,93 +1,113 @@
 .navbar {
   position: relative;
-  width: 100%;
-  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 1.8rem;
+  height: inherit;
+
+  @include atMD {
+    display: flex;
+    justify-content: space-between;
+    max-width: 123.6rem;
+    margin: 0 auto;
+  }
+
+  &__logo {
+    background-image: linear-gradient(to top, #dba55d 0%, #c8852c 100%);
+    background-size: cover;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-size: 2.4rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    cursor: pointer;
+
+    @include atMD {
+      font-size: 3.2rem;
+      font-weight: 600;
+    }
+  }
 
   &__menu-icon {
     position: absolute;
-    z-index: 100;
-    top: 2rem;
-    right: 5px;
-    color: white;
-    font-size: 2.4rem;
+    right: 2rem;
+    top: 50%;
+    z-index: 1000;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 2.8rem;
 
-    @include atLG {
-      display: none;
+    .fa-bars {
+      display: block;
     }
 
     .fa-times {
       display: none;
     }
-  }
 
-  &__menu-content {
-    position: fixed;
-    z-index: 50;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    padding-bottom: 8rem;
-    background-color: $color-primary;
-    transform: translateX(-100%);
-    transition: transform 0.4s ease-in-out;
-
-    @include atSM {
-      padding-bottom: 0rem;
+    @include atMD {
+      display: none;
     }
 
-    @include atLG {
-      position: static;
-      top: auto;
-      left: auto;
-      flex-direction: row;
-      justify-content: flex-end;
-      align-items: center;
-      width: auto;
-      height: 100%;
-      background-color: transparent;
-      transform: translateX(0);
+    &--is-active {
+      .fa-bars {
+        display: none;
+      }
+
+      .fa-times {
+        display: block;
+      }
     }
   }
 
   &__list {
+    list-style-type: none;
+    position: absolute;
+    top: -40rem;
+    left: 0;
+    z-index: 50;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 75%;
-    list-style-type: none;
+    height: 40vh;
+    padding: 6rem 0 2rem 0;
+    background-color: $color-primary;
+    transition: all 0.5s ease-in-out;
 
-    @include atLG {
+    &--is-active {
+      top: 0;
+    }
+
+    @include atMD {
+      position: static;
+      top: auto;
+      left: auto;
+      display: flex;
       flex-direction: row;
-      justify-content: flex-start;
-      align-items: stretch;
-      width: auto;
       height: auto;
+      width: auto;
+      padding: 0;
+      background-color: transparent;
     }
   }
 
   &__list-item {
-    font-size: 2rem;
-    font-weight: 300;
-
-    a {
-      color: white;
+    @include atMD {
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
     }
 
-    @include atMD {
-      margin-right: 2rem;
-      font-size: 1.4rem;
+    a {
+      color: #fff;
+      font-weight: 300;
 
-      a {
-        &.is-current-link {
-          color: #eeae5a;
-        }
+      &.is-current-link {
+        color: #eeae5a;
       }
     }
   }
